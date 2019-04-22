@@ -29,7 +29,7 @@ public class OntologyRest {
     @GetMapping(path = "/hello")
     String getAllOntologies() throws UnknownHostException {
 
-             return "Hello from spring boot in Openshift "+InetAddress.getLocalHost().getHostName();
+             return "Hello from spring boot in Openshift Platform"+InetAddress.getLocalHost().getHostName();
 
     }
 
