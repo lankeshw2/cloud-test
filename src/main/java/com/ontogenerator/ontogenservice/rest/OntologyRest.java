@@ -9,6 +9,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -26,10 +27,12 @@ public class OntologyRest {
     @Value("${ontology.genfilepath}")
     String genFilePath;
 
-    @GetMapping(path = "/hello")
-    String getAllOntologies() throws UnknownHostException {
+    @GetMapping(path = "/hello/{path}")
+    String getAllOntologies(@PathVariable(name="path") String path) throws UnknownHostException {
+        
+               System.out.println("Received request with path  "+path);
 
-             return "Hello from spring boot in Openshift Platform"+InetAddress.getLocalHost().getHostName();
+             return " Openshift Platform You have sent the path "+path;
 
     }
 
