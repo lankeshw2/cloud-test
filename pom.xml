@@ -65,12 +65,7 @@
         </dependency>
         
         
-        <dependency>
-            <groupId>com.obo</groupId>
-            <artifactId>obo-graph</artifactId>
-            <version>1.0</version>
-         
-        </dependency>
+      
         
         <dependency>
             <groupId>com.google.guava</groupId>
