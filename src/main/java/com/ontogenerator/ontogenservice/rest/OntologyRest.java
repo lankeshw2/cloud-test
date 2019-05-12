@@ -32,7 +32,7 @@ public class OntologyRest {
         
                System.out.println("Received request with path  "+path);
 
-             return " Openshift Platform You have sent the path "+path;
+             return " Welcome to AWS You have sent the path "+path;
 
     }
 
